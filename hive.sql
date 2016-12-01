@@ -62,6 +62,7 @@ JOIN
     app.app_cis_jd_opp_price_history_da AS b
 ON (a.item_sku_id = b.jdsku);
 
+
 ### 3. pruned before join
 
 SELECT a.skuid, b.jdprice, b.oppname, b.oppprice 
@@ -80,6 +81,7 @@ LEFT JOIN
          dt = '2016-11-20'
     ) AS b
 ON a.skuid = b.jdsku;
+
 
 ### 4. look cluster status
 # http://bdp.jd.com/ide/yarn/job_list.html?_dc=1480579104221&m=51
