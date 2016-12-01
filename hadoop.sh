@@ -30,3 +30,8 @@ hadoop jar word_count.jar WordCount mr/lecture0/input mr/lecture0/output
 
 # if your .jar has specified a MAIN CLASS, you have to remove [class_name]
 hadoop jar word_pair_count.jar mr/lecture0/input mr/lecture0/output
+
+#
+# kill job
+#
+hadoop job  -kill job_1480141012490_366644
