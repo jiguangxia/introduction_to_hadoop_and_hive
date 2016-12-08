@@ -99,3 +99,5 @@ SELECT * FROM lecture0_a a LEFT OUTER JOIN lecture0_b b ON (a.id = b.id);
 SELECT * FROM lecture0_a a RIGHT OUTER JOIN lecture0_b b ON (a.id = b.id);
 SELECT * FROM lecture0_a a FULL OUTER join lecture0_b b ON (a.id = b.id);
 
+DROP TABLE lecture0_a;
+DROP TABLE lecture0_b;
