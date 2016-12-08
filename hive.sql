@@ -85,3 +85,17 @@ ON a.skuid = b.jdsku;
 
 ### 4. look cluster status
 # http://bdp.jd.com/ide/yarn/job_list.html?_dc=1480579104221&m=51
+
+
+### 5. join
+CREATE TABLE lecture0_a(id STRING);
+CREATE TABLE lecture0_b(id STRING);
+INSERT INTO TABLE lecture0_a VALUES ('1111'), ('2222'), ('3333'), ('3333');
+INSERT INTO TABLE lecture0_b VALUES ('2222'), ('3333'), ('4444'), ('2222'), ('4444');
+
+SELECT * FROM lecture0_a a JOIN lecture0_b b ON (a.id = b.id);
+SELECT * FROM lecture0_a a LEFT SEMI JOIN lecture0_b b ON (a.id = b.id);
+SELECT * FROM lecture0_a a LEFT OUTER JOIN lecture0_b b ON (a.id = b.id);
+SELECT * FROM lecture0_a a RIGHT OUTER JOIN lecture0_b b ON (a.id = b.id);
+SELECT * FROM lecture0_a a FULL OUTER join lecture0_b b ON (a.id = b.id);
+
