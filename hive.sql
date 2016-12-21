@@ -29,10 +29,10 @@ CREATE [EXTERNAL] TABLE table_name(
     col_name_5 DATE            # TIMESTAMP
     ...
 )
+[COMMENT your_comment]
 [PARTITIONED BY (col_name date_type)]
 [ROW FORMAT DELIMITED FIELDS TERMINATED BY '\t']
-[STORED AS TEXTFILE]
-[COMMENT your_comment];
+[STORED AS TEXTFILE];
 
 
 ####################
