@@ -15,7 +15,7 @@ SHOW TABLES;
 DESC table_name;                      # desc dp_kvi_score;
 SHOW PARTITIONS table_name;           # show partitions dp_kvi_score;
 DROP TABLSE table_name;
-LOAD DATA [LOCAL] INPATH file_path [OVERWRITE] INTO TABLE table_name [PARTITION value];
+LOAD DATA [LOCAL] INPATH file_path [OVERWRITE] INTO TABLE table_name [PARTITION col_name=value];
 
 
 # create table
